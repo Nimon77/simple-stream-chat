@@ -1,0 +1,8 @@
+services:
+  app:
+    image: simple-stream-chat
+    build: .
+    environment:
+      STREAM_URL: "https://example.com/live"
+    ports:
+      - 3000:3000
